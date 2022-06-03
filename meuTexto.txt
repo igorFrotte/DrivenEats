@@ -1,0 +1,3 @@
+Estou mexendo comGit!
+Olá, Git!
+Git é muito legal!
