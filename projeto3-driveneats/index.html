@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Driven Eats</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='reset.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='estilo.css'>
+</head>
+<body>
+    <div class="pagina">
+        <div class="topo">
+            <h1>DrivenEats</h1>
+            <h4>Sua comida em 6 minutos</h4>
+        </div>
+        <div class="corpo">
+            <h2>Primeiro, seu prato</h2>
+            <div class="prato">
+                <div onclick="selecionar(this, 'prato')">
+                    <img src="./imagens/frango.jpg" >
+                    <h3>Frango</h3>
+                    <p>Delicioso frango e acompanhamento</p>
+                    <div class="rodape">
+                        <div class="preco">R$ 19,90</div>
+                        <div class="check">
+                            <img src="./imagens/check.png">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="selecionar(this, 'prato')">
+                    <img src="./imagens/picanha.jpg" >
+                    <h3>Picanha</h3>
+                    <p>Deliciosa picanha e acompanhamento</p>
+                    <div class="rodape">
+                        <div class="preco">R$ 30,90</div>
+                        <div class="check">
+                            <img src="./imagens/check.png">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="selecionar(this, 'prato')">
+                    <img src="./imagens/sushi.png" >
+                    <h3>Sushi</h3>
+                    <p>Delicioso sushi e acompanhamento</p>
+                    <div class="rodape">
+                        <div class="preco">R$ 25,90</div>
+                        <div class="check">
+                            <img src="./imagens/check.png">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="selecionar(this, 'prato')">
+                    <img src="./imagens/alcatra.png" >
+                    <h3>Alcatra</h3>
+                    <p>Deliciosa alcatra e acompanhamento</p>
+                    <div class="rodape">
+                        <div class="preco">R$ 23,90</div>
+                        <div class="check">
+                            <img src="./imagens/check.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Agora, sua bebida</h2>
+            <div class="bebida">
+                <div onclick="selecionar(this, 'bebida')">
+                    <img src="./imagens/coca.jpg" >
+                    <h3>Coca cola</h3>
+                    <p>Lata 350ml de pura coca-cola</p>
+                    <div class="rodape">
+                        <div class="preco">R$ 5,90</div>
+                        <div class="check">
+                            <img src="./imagens/check.png">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="selecionar(this, 'bebida')">
+                    <img src="./imagens/suco.png" >
+                    <h3>Suco</h3>
+                    <p>500ml de suco bem gelado!</p>
+                    <div class="rodape">
+                        <div class="preco">R$ 8,90</div>
+                        <div class="check">
+                            <img src="./imagens/check.png">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="selecionar(this, 'bebida')">
+                    <img src="./imagens/toddy.png" >
+                    <h3>Toddynho</h3>
+                    <p>200ml de um delicioso Toddynho</p>
+                    <div class="rodape">
+                        <div class="preco">R$ 3,90</div>
+                        <div class="check">
+                            <img src="./imagens/check.png">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="selecionar(this, 'bebida')">
+                    <img src="./imagens/pepsi.png" >
+                    <h3>Pepsi</h3>
+                    <p>Lata 350ml de pura pepsi</p>
+                    <div class="rodape">
+                        <div class="preco">R$ 4,90</div>
+                        <div class="check">
+                            <img src="./imagens/check.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Por fim, sua sobremesa</h2>
+            <div class="sobremesa">
+                <div onclick="selecionar(this, 'sobremesa')">
+                    <img src="./imagens/pudim.jpg" >
+                    <h3>Pudim</h3>
+                    <p>Pedaço de pudim tradicional</p>
+                    <div class="rodape">
+                        <div class="preco">R$ 7,90</div>
+                        <div class="check">
+                            <img src="./imagens/check.png">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="selecionar(this, 'sobremesa')">
+                    <img src="./imagens/chese.jpg" >
+                    <h3>Cheesecake</h3>
+                    <p>Pedaço de cheesecake</p>
+                    <div class="rodape">
+                        <div class="preco">R$ 14,90</div>
+                        <div class="check">
+                            <img src="./imagens/check.png">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="selecionar(this, 'sobremesa')">
+                    <img src="./imagens/fn.jpg" >
+                    <h3>Floresta Negra</h3>
+                    <p>Pedaço de torta floresta negra</p>
+                    <div class="rodape">
+                        <div class="preco">R$ 12,90</div>
+                        <div class="check">
+                            <img src="./imagens/check.png">
+                        </div>
+                    </div>
+                </div>
+                <div onclick="selecionar(this, 'sobremesa')">
+                    <img src="./imagens/torta.jpg" >
+                    <h3>Torta</h3>
+                    <p>Pedaço de torta sabor chocolate</p>
+                    <div class="rodape">
+                        <div class="preco">R$ 5,90</div>
+                        <div class="check">
+                            <img src="./imagens/check.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="base">
+            <div class="semItens">
+                <h6>Selecione os 3 itens</h6>  
+                <h6>para fechar o pedido</h6>
+            </div>
+            <div onclick="pedir()" class="comItens">
+                <h6>Fechar pedido</h6>
+            </div>
+        </div>
+    </div>  
+    <script src='script.js'></script>
+</body>
+</html>

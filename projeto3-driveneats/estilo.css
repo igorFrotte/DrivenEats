@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box; 
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+}
+.pagina{
+    width: 414px;
+    background-color: #EEEEEE;
+    margin: 92px;
+}
+.topo{
+    position: fixed;
+    width: 414px;
+    height: 92px;
+    left: 50%;
+    top: 0px;
+    transform: translateX(-207px);
+    background-color: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+h1 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+    margin: 8px 0 5px 20px;
+}
+h4 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+h2 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.018em;
+    color: #333333;
+    margin: 30px 0 20px 20px;
+}
+.corpo > div {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+/* .corpo > div::-webkit-scrollbar{
+    
+    height: 8px;
+    border: 10px solid rgb(200,200,200);
+}
+.corpo > div::-webkit-scrollbar-thumb{
+    width: 3px;
+    background-color: rgba(207, 43, 43, 0.8); 
+    border-radius: 5px;
+} */
+.corpo > div:last-child {
+    margin-bottom: 20px;
+}
+.corpo > div > div {
+    min-width: 172px;
+    min-height: 216px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    margin-right: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 5px #FFFFFF;
+}
+.corpo > div > div:first-child {
+    margin-left: 20px;
+}
+.corpo > div > div:last-child {
+    margin-right: 20px;
+}
+img {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+h3 {
+    width: 144px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+p {
+    width: 144px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+}
+.preco {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.semItens {
+    width: 364px;
+    height: 61px;
+    background: #CBCBCB;
+    border-radius: 50px;    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.comItens {
+    width: 364px;
+    height: 61px;
+    background: #32B72F;
+    border-radius: 50px;    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.base{
+    position: fixed;
+    width: 414px;
+    height: 92px;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-207px);
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.rodape{
+    width: 144px;
+    display: flex;
+    justify-content: space-between;
+}
+/* Parte com js */
+
+/* .escolhido {
+     border: solid 5px #32B72F;   css me deixa triste 
+} */
+.check {
+    visibility: hidden;
+}
+.check img{
+    width: 16px;
+    height: 16px;
+}
+.escolhido .check{
+    visibility: initial;
+}
